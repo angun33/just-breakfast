@@ -1,0 +1,22 @@
+---
+
+# Change this to google analytics ID
+analytics-id: UA-XXXXX-Y
+
+_options:
+  partials:
+    - app/partials/analytics.static.hbs
+    - app/partials/head.static.hbs
+---
+<!DOCTYPE html>
+<html>
+  <head>
+    {{>head}}
+  </head>
+  <body>
+    {{content}}
+    <script src="vendor.js">
+    <script src="main.js">
+    {{>analytics}}
+  </body>
+</html>

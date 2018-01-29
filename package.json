@@ -1,0 +1,27 @@
+{
+  "name": "just-breakfast",
+  "description": "Simple static site generator using Brunch, Sass, and Handlebars",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/angun33/just-breakfast.git"
+  },
+  "scripts": {
+    "start": "brunch watch --server",
+    "build": "brunch build --production"
+  },
+  "author": "Andry Gunawan",
+  "license": "MIT",
+  "dependencies": {
+    "normalize.css": "latest"
+  },
+  "devDependencies": {
+    "auto-reload-brunch": "^2",
+    "brunch": "^2",
+    "brunch-static": "^1.2.1",
+    "clean-css-brunch": "^2",
+    "html-brunch-static": "^1.4.0",
+    "sass-brunch": "^2",
+    "uglify-js-brunch": "^2"
+  }
+}
