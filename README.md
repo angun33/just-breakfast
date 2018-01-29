@@ -25,5 +25,5 @@ This is a skeleton for [Brunch](http://brunch.io) to generate a static site. It 
 * Place static files you want to be copied from `app/assets/` to `public/`.
 * [Handlebars](http://handlebarsjs.com) Static site templating structure is written in `layouts`, `partials`, and `pages`.
 * [Brunch](http://brunch.io), [Getting started guide](https://github.com/brunch/brunch-guide#readme)
-* [SASS](http://sass-lang.com/), using the scss syntax and the [7-1 architecture pattern](http://sass-guidelin.es/#architecture) and sticking to [Sass Guidelines](http://sass-guidelin.es) writing conventions.
+* [SASS](http://sass-lang.com/)
 * [html-brunch-static](https://github.com/bmatcuk/html-brunch-static) enables [handlebars](http://handlebarsjs.com/) precompiled templates.
