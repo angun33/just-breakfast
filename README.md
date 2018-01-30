@@ -8,7 +8,7 @@ This is a skeleton for [Brunch](http://brunch.io) to generate a static site. It 
 
 ### Initialize
 * Once Node.js and Brunch are installed,
-* Clone this git repo `https://github.com/kgcreative/brunch-with-cocktails.git`
+* Clone this git repo `https://github.com/angun33/just-breakfast.git`
 * Run `npm install` to install app dependencies and brunch plugins
 
 ### Configure:
