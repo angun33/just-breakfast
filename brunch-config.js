@@ -13,10 +13,28 @@ module.exports = {
   plugins: {
     sass: {
       mode: 'native',
+      sourceMapEmbed: true,
       options: {
         includePaths: [
          'node_modules/normalize.css'
         ]
+      }
+    },
+
+    babel: {
+      presets: [['env', {
+        targets: {
+          browsers: ['ie >= 9']
+        }
+      }]]
+    },
+
+    uglify: {
+      mangle: false,
+      compress: {
+        global_defs: {
+          DEBUG: false
+        }
       }
     },
 
@@ -25,7 +43,11 @@ module.exports = {
       processors: [
         require('html-brunch-static')({
           handlebars: {
-            enableProcessor: true
+            enableProcessor: true,
+            helpers: {
+              ifProd: function(opts) { return process.env.NODE_ENV === 'production' ? opts.fn(this) : opts.inverse(this); },
+              ifEq: function(a, b, opts) { return a === b ? opts.fn(this) : opts.inverse(this); }
+            }
           },
           minify: true
         })
